@@ -21,7 +21,7 @@ NB: Can work both in group or one to one chat
 
 ---
 
-You can either send an image to the sticker maker whatsApp's number of members.
+You can either send an image to the sticker maker whatsApp's number of sticker-bot(coming soon).
 **Or**
 You can clone this repo and use it for your own purposes or as a reference to building a project install the project.
 
