@@ -76,8 +76,7 @@ const stickerize = (msg, media, chat) => {
   }
 };
 
-client.initialize();
-
 app.listen(PORT, () => {
+  client.initialize();
   console.log(`server started on port ${PORT}`);
 });
