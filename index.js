@@ -2,6 +2,12 @@ import mime from "mime-types";
 import qrcode from "qrcode-terminal";
 import pkg, { Client } from "whatsapp-web.js";
 
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3030;
+
+// your code
+
 const { LocalAuth, MessageMedia } = pkg;
 const client = new Client({
   authStrategy: new LocalAuth(),
@@ -68,4 +74,7 @@ const stickerize = (msg, media, chat) => {
   }
 };
 
-client.initialize();
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+  client.initialize();
+});
