@@ -1,8 +1,8 @@
+import express from "express";
 import mime from "mime-types";
 import qrcode from "qrcode-terminal";
 import pkg, { Client } from "whatsapp-web.js";
 
-const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3030;
 
