@@ -1,33 +1,3 @@
-2022/12/20-23:13:45.155 41c Reusing MANIFEST C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/12/20-23:13:45.155 41c Recovering log #4
-2022/12/20-23:13:45.178 41c Reusing old log C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000004.log 
-2022/12/20-23:13:48.070 39b8 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
-2022/12/20-23:13:48.076 39b8 Level-0 table #8: started
-2022/12/20-23:13:48.089 39b8 Level-0 table #8: 87403 bytes OK
-2022/12/20-23:13:48.091 39b8 Delete type=0 #4
-2022/12/20-23:13:48.094 39b8 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
-2022/12/20-23:13:48.101 39b8 Level-0 table #10: started
-2022/12/20-23:13:48.122 39b8 Level-0 table #10: 3215 bytes OK
-2022/12/20-23:13:48.123 39b8 Delete type=0 #7
-2022/12/20-23:13:48.124 39b8 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\xc8\x08\x00w\x00a\x00m\x00_\x00m\x00e\x00t\x00a' @ 6133 : 1
-2022/12/20-23:13:48.124 39b8 Compacting 1@0 + 1@1 files
-2022/12/20-23:13:48.142 39b8 Generated table #11@0: 2110 keys, 38646 bytes
-2022/12/20-23:13:48.142 39b8 Compacted 1@0 + 1@1 files => 38646 bytes
-2022/12/20-23:13:48.143 39b8 compacted to: files[ 0 1 1 0 0 0 0 ]
-2022/12/20-23:13:48.144 39b8 Delete type=2 #10
-2022/12/20-23:13:48.145 39b8 Manual compaction at level-0 from '\x00\x08\x00\x00\xc8\x08\x00w\x00a\x00m\x00_\x00m\x00e\x00t\x00a' @ 6133 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
-2022/12/20-23:13:48.151 4184 Level-0 table #13: started
-2022/12/20-23:13:48.173 4184 Level-0 table #13: 17184 bytes OK
-2022/12/20-23:13:48.175 4184 Delete type=2 #8
-2022/12/20-23:13:48.175 4184 Delete type=0 #9
-2022/12/20-23:13:48.176 4184 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\xc8\x09\x00p\x00s\x00_\x00t\x00o\x00k\x00e\x00n\x00s' @ 6213 : 1
-2022/12/20-23:13:48.176 4184 Compacting 1@0 + 1@1 files
-2022/12/20-23:13:48.188 4184 Generated table #14@0: 1841 keys, 17390 bytes
-2022/12/20-23:13:48.188 4184 Compacted 1@0 + 1@1 files => 17390 bytes
-2022/12/20-23:13:48.189 4184 compacted to: files[ 0 1 1 0 0 0 0 ]
-2022/12/20-23:13:48.189 4184 Delete type=2 #13
-2022/12/20-23:13:48.190 4184 Manual compaction at level-0 from '\x00\x08\x00\x00\xc8\x09\x00p\x00s\x00_\x00t\x00o\x00k\x00e\x00n\x00s' @ 6213 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
-2022/12/20-23:14:36.872 580 Level-0 table #16: started
-2022/12/20-23:14:36.921 580 Level-0 table #16: 1042596 bytes OK
-2022/12/20-23:14:36.923 580 Delete type=2 #11
-2022/12/20-23:14:36.923 580 Delete type=0 #12
+2022/12/21-00:00:24.683 4090 Reusing MANIFEST C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/21-00:00:24.684 4090 Recovering log #18
+2022/12/21-00:00:24.962 4090 Reusing old log C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000018.log 

@@ -6,6 +6,12 @@ import pkg, { Client } from "whatsapp-web.js";
 const app = express();
 const PORT = process.env.PORT || 3030;
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    welcome: "sticker bot",
+  });
+});
+
 // your code
 
 const { LocalAuth, MessageMedia } = pkg;
@@ -17,29 +23,25 @@ client.on("qr", (qr) => {
 });
 
 client.on("ready", () => {
-  // console.log("Client is ready!");
+  console.log("Client is ready!");
 });
 
 client.on("message", async (msg) => {
   if (msg.hasMedia && msg.type !== "ptt") {
     let chat = await msg.getChat();
     if (!chat.isGroup && !msg.from.includes("status")) {
-      setTimeout(async () => {
-        await msg.downloadMedia().then((media) => {
-          stickerize(msg, media, chat);
-        });
-      }, 1000);
+      await msg.downloadMedia().then((media) => {
+        stickerize(msg, media, chat);
+      });
     } else if (
       chat.isGroup &&
       !msg.from.includes("status") &&
       msg.type !== "ptt"
     ) {
       if (msg?.mentionedIds[0]?.includes("2348141879521")) {
-        setTimeout(async () => {
-          await msg.downloadMedia().then((media) => {
-            stickerize(msg, media, chat);
-          });
-        }, 500);
+        await msg.downloadMedia().then((media) => {
+          stickerize(msg, media, chat);
+        });
       }
     }
   }
@@ -74,7 +76,8 @@ const stickerize = (msg, media, chat) => {
   }
 };
 
+client.initialize();
+
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
-  client.initialize();
 });

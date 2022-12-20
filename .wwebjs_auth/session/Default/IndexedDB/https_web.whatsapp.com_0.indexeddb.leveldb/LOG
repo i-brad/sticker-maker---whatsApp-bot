@@ -1,13 +1,12 @@
-2022/12/20-23:15:52.287 4114 Reusing MANIFEST C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/12/20-23:15:52.288 4114 Recovering log #15
-2022/12/20-23:15:52.422 4114 Reusing old log C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000015.log 
-2022/12/20-23:15:52.987 2004 Level-0 table #19: started
-2022/12/20-23:15:53.039 2004 Level-0 table #19: 1180409 bytes OK
-2022/12/20-23:15:53.042 2004 Delete type=0 #15
-2022/12/20-23:15:53.426 2004 Compacting 2@0 + 1@1 files
-2022/12/20-23:15:53.603 2004 Generated table #20@0: 35925 keys, 908376 bytes
-2022/12/20-23:15:53.604 2004 Compacted 2@0 + 1@1 files => 908376 bytes
-2022/12/20-23:15:53.605 2004 compacted to: files[ 0 1 1 0 0 0 0 ]
-2022/12/20-23:15:53.605 2004 Delete type=2 #14
-2022/12/20-23:15:53.605 2004 Delete type=2 #16
-2022/12/20-23:15:53.606 2004 Delete type=2 #19
+2022/12/21-00:01:08.807 30d4 Reusing MANIFEST C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/21-00:01:08.808 30d4 Recovering log #18
+2022/12/21-00:01:09.112 30d4 Reusing old log C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000018.log 
+2022/12/21-00:01:21.360 924 Level-0 table #23: started
+2022/12/21-00:01:21.447 924 Level-0 table #23: 1182836 bytes OK
+2022/12/21-00:01:21.448 924 Delete type=0 #18
+2022/12/21-00:01:21.462 924 Compacting 1@0 + 1@1 files
+2022/12/21-00:01:21.754 924 Generated table #24@0: 55283 keys, 1120374 bytes
+2022/12/21-00:01:21.754 924 Compacted 1@0 + 1@1 files => 1120374 bytes
+2022/12/21-00:01:21.755 924 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/21-00:01:21.755 924 Delete type=2 #20
+2022/12/21-00:01:21.755 924 Delete type=2 #23
