@@ -1,0 +1,13 @@
+2022/12/20-23:15:52.287 4114 Reusing MANIFEST C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/20-23:15:52.288 4114 Recovering log #15
+2022/12/20-23:15:52.422 4114 Reusing old log C:\Users\DevBraD\Documents\Personal Projects\Backend\stickerize bot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000015.log 
+2022/12/20-23:15:52.987 2004 Level-0 table #19: started
+2022/12/20-23:15:53.039 2004 Level-0 table #19: 1180409 bytes OK
+2022/12/20-23:15:53.042 2004 Delete type=0 #15
+2022/12/20-23:15:53.426 2004 Compacting 2@0 + 1@1 files
+2022/12/20-23:15:53.603 2004 Generated table #20@0: 35925 keys, 908376 bytes
+2022/12/20-23:15:53.604 2004 Compacted 2@0 + 1@1 files => 908376 bytes
+2022/12/20-23:15:53.605 2004 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/20-23:15:53.605 2004 Delete type=2 #14
+2022/12/20-23:15:53.605 2004 Delete type=2 #16
+2022/12/20-23:15:53.606 2004 Delete type=2 #19
