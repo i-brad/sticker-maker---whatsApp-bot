@@ -1,16 +1,6 @@
-import express from "express";
 import mime from "mime-types";
 import qrcode from "qrcode-terminal";
-import pkg, { Client } from "whatsapp-web.js";
-
-const app = express();
-const PORT = process.env.PORT || 3030;
-
-app.get("/", (req, res) => {
-  res.status(200).json({
-    welcome: "sticker bot",
-  });
-});
+import { Client } from "whatsapp-web.js";
 
 // your code
 
@@ -76,7 +66,4 @@ const stickerize = (msg, media, chat) => {
   }
 };
 
-app.listen(PORT, () => {
-  client.initialize();
-  console.log(`server started on port ${PORT}`);
-});
+client.initialize();
