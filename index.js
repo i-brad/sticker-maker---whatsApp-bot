@@ -1,6 +1,6 @@
 import mime from "mime-types";
 import qrcode from "qrcode-terminal";
-import { Client } from "whatsapp-web.js";
+import pkg, { Client } from "whatsapp-web.js";
 
 // your code
 
