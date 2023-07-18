@@ -5,7 +5,7 @@ const { Client, MessageMedia } = require("whatsapp-web.js");
 // your code
 
 const client = new Client({
-  puppeteer: { headless: false, env: "dev" },
+  puppeteer: { headless: false, env: "dev", args: ["--no-sandbox"] },
 });
 
 client.on("qr", (qr) => {
