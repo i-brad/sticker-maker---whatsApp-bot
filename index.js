@@ -4,6 +4,18 @@ const { Client, MessageMedia } = require("whatsapp-web.js");
 
 // your code
 
+const client = new Client({
+  puppeteer: { headless: false, env: "dev" },
+});
+
+client.on("qr", (qr) => {
+  qrcode.generate(qr, { small: true });
+});
+
+client.on("ready", () => {
+  // console.log("Client is ready!");
+});
+
 const stickerize = (msg, media, chat) => {
   if (media) {
     const extension = mime.extension(media.mimetype);
@@ -32,17 +44,6 @@ const stickerize = (msg, media, chat) => {
     }
   }
 };
-
-const client = new Client({
-  puppeteer: { headless: false },
-});
-client.on("qr", (qr) => {
-  qrcode.generate(qr, { small: true });
-});
-
-client.on("ready", () => {
-  console.log("Client is ready!");
-});
 
 client.on("message", async (msg) => {
   if (msg.hasMedia && msg.type !== "ptt") {
