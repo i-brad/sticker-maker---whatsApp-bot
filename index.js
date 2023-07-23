@@ -49,13 +49,16 @@ const stickerize = (msg, media, chat) => {
 client.on("message", async (msg) => {
   let chat = await msg.getChat();
   if (
-    (msg?._data?.body?.includes("hey") || msg?._data?.body?.includes("bot")) &&
+    (msg?._data?.body?.toLowerCase()?.includes("hey") ||
+      msg?._data?.body?.toLowerCase()?.includes("bot")) &&
     !chat.isGroup &&
     !msg.from.includes("status")
   ) {
-    msg.reply(
-      "Good day. I'm a friend of Brad, a sticker bot... read my description(bio) for more information"
-    );
+    setTimeout(() => {
+      msg.reply(
+        "Good day. I'm a friend of Brad, a sticker bot... read my description(bio) for more information"
+      );
+    }, 2000);
     return;
   }
   // console.log(msg);
