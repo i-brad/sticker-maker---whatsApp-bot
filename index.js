@@ -31,6 +31,7 @@ const stickerize = (msg, media, chat) => {
               stickerAuthor: "Brad",
               stickerName: "My pack",
               stickerCategories: ["🧑‍💻"],
+              msg: "testing",
             }
           )
           .then(() => {
@@ -46,11 +47,24 @@ const stickerize = (msg, media, chat) => {
 };
 
 client.on("message", async (msg) => {
-  if (msg.hasMedia && msg.type !== "ptt") {
-    let chat = await msg.getChat();
+  let chat = await msg.getChat();
+  if (
+    (msg?._data?.body?.includes("hey") || msg?._data?.body?.includes("bot")) &&
+    !chat.isGroup &&
+    !msg.from.includes("status")
+  ) {
+    msg.reply(
+      "Good day. I'm a friend of Brad, a sticker bot... read my description(bio) for more information"
+    );
+    return;
+  }
+  // console.log(msg);
+  if (msg.hasMedia && msg.type !== "ptt" && msg.type !== "sticker") {
     if (!chat.isGroup && !msg.from.includes("status")) {
       await msg.downloadMedia().then((media) => {
-        stickerize(msg, media, chat);
+        setTimeout(() => {
+          stickerize(msg, media, chat);
+        }, 1000);
       });
     } else if (
       chat.isGroup &&

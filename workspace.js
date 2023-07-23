@@ -80,44 +80,44 @@ const stickerize = (msg, media, chat) => {
   }
 };
 
-// const makeMeme = async (msg, media, chat) => {
-//   if (media) {
-//     let text = msg?._data?.caption?.split(":")[1];
-//     const extension = mime.extension(media.mimetype);
-//     const filename = "meme" + new Date().getTime();
+const makeMeme = async (msg, media, chat) => {
+  if (media) {
+    let text = msg?._data?.caption?.split(":")[1];
+    const extension = mime.extension(media.mimetype);
+    const filename = "meme" + new Date().getTime();
 
-//     try {
-//       let memecontent = {
-//         // toptext: "Hello",
-//         bottomtext: text,
-//         "bottomtext-y": 30,
-//         getbuffer: true,
-//         filename,
-//         fileformat: extension,
-//         pictureheight: 400,
-//         picturewidth: 500,
-//       };
-//       console.log(media);
-//       memes.createMeme(media?.data, memecontent).then((meme) => {
-//         console.log(meme);
-//         // chat
-//         //   .sendMessage(
-//         //     new MessageMedia(media.mimetype, meme, "sticker" + filename),
-//         //     {
-//         //       sendMediaAsSticker: true,
-//         //       stickerAuthor: "Brad",
-//         //       stickerName: "My pack",
-//         //       stickerCategories: ["🧑‍💻"],
-//         //     }
-//         //   )
-//         //   .then(() => {
-//         //     msg.reply("Done stickerizing");
-//         //   });
-//       });
-//     } catch (err) {
-//       console.log("Failed", err);
-//     }
-//   }
-// };
+    try {
+      let memecontent = {
+        // toptext: "Hello",
+        bottomtext: text,
+        "bottomtext-y": 30,
+        getbuffer: true,
+        filename,
+        fileformat: extension,
+        pictureheight: 400,
+        picturewidth: 500,
+      };
+      console.log(media);
+      memes.createMeme(media?.data, memecontent).then((meme) => {
+        console.log(meme);
+        chat
+          .sendMessage(
+            new MessageMedia(media.mimetype, meme, "sticker" + filename),
+            {
+              sendMediaAsSticker: true,
+              stickerAuthor: "Brad",
+              stickerName: "My pack",
+              stickerCategories: ["🧑‍💻"],
+            }
+          )
+          .then(() => {
+            msg.reply("Done stickerizing");
+          });
+      });
+    } catch (err) {
+      console.log("Failed", err);
+    }
+  }
+};
 
 client.initialize();
