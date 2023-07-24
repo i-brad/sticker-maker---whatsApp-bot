@@ -47,27 +47,27 @@ const stickerize = (msg, media, chat) => {
 };
 
 client.on("message", async (msg) => {
-  let chat = await msg.getChat();
-  if (
-    (msg?._data?.body?.toLowerCase()?.includes("hey") ||
-      msg?._data?.body?.toLowerCase()?.includes("bot")) &&
-    !chat.isGroup &&
-    !msg.from.includes("status")
-  ) {
-    setTimeout(() => {
-      msg.reply(
-        "Good day. I'm a friend of Brad, a sticker bot... read my description(bio) for more information"
-      );
-    }, 2000);
-    return;
-  }
+  // if (
+  //   (msg?._data?.body?.toLowerCase()?.includes("hey") ||
+  //     msg?._data?.body?.toLowerCase()?.includes("bot")) &&
+  //   chat.isGroup &&
+  //   msg.from.includes("status")
+  // ) {
+  //   setTimeout(() => {
+  //     msg.reply(
+  //       "Good day. I'm a friend of Brad, a sticker bot... read my description(bio) for more information"
+  //     );
+  //   }, 2000);
+  //   return;
+  // }
   // console.log(msg);
   if (msg.hasMedia && msg.type !== "ptt" && msg.type !== "sticker") {
+    let chat = await msg.getChat();
     if (!chat.isGroup && !msg.from.includes("status")) {
       await msg.downloadMedia().then((media) => {
         setTimeout(() => {
           stickerize(msg, media, chat);
-        }, 1000);
+        }, 2000);
       });
     } else if (
       chat.isGroup &&
