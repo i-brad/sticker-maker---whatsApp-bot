@@ -65,9 +65,7 @@ client.on("message", async (msg) => {
     let chat = await msg.getChat();
     if (!chat.isGroup && !msg.from.includes("status")) {
       await msg.downloadMedia().then((media) => {
-        setTimeout(() => {
-          stickerize(msg, media, chat);
-        }, 2000);
+        stickerize(msg, media, chat);
       });
     } else if (
       chat.isGroup &&
