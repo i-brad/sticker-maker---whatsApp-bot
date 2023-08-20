@@ -122,7 +122,7 @@ const makeMeme = async (msg, media, chat) => {
                   msg.reply("Done stickerizing");
                   fs.unlink(`./${filename}.${extension}`, function (err) {
                     if (err) throw err;
-                    console.log("File deleted!");
+                    // console.log("File deleted!");
                   });
                 });
             })
